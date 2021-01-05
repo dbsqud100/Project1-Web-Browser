@@ -1,0 +1,7 @@
+#clock_div_id {
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
