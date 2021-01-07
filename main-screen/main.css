@@ -28,3 +28,16 @@ body {
   z-index: -1;
   animation: fadeIn 1s linear;
 }
+
+#greeting_id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 40px;
+  color: white;
+}
+
+#greetingWord_id {
+  animation: fadeIn 2s linear;
+}
