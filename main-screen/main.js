@@ -1,6 +1,8 @@
 const clockContainer = document.querySelector(".clock_div_cl");
 const clockTitle = clockContainer.querySelector(".clock_h1_cl");
 const body = document.querySelector("body");
+const greeting = document.querySelector(".greeting_cl");
+const greetingWord = greeting.querySelector(".greetingWord_cl");
 
 function getTime() {
     const date = new Date();
@@ -17,9 +19,19 @@ function paintBackground(number){
     body.prepend(image)
 }
 
-function getRandom(){
+function getRandomNumber(){
     const number = Math.floor(Math.random()*6);
     return number;
+}
+
+function writeGreeting(number){
+    const wordText = [`Happy New Year`,`Have a good time`,`Welcom My Browser`];
+    greetingWord.innerText = `${wordText[number]}`;
+}
+
+function getRandomText(){
+    const text = Math.floor(Math.random()*3);
+    return text;
 }
 
 function init(){
@@ -27,8 +39,11 @@ function init(){
     getTime();
     setInterval(getTime, 1000); 
     //background
-    const random = getRandom();
-    paintBackground(random);
+    const randomBg = getRandomNumber();
+    paintBackground(randomBg);
+    //Greeting
+    const randomWord = getRandomText();
+    writeGreeting(randomWord);
 }
 
 init();
