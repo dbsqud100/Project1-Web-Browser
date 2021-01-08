@@ -4,6 +4,7 @@ const body = document.querySelector("body");
 const greeting = document.querySelector(".greeting_cl");
 const greetingWord = greeting.querySelector(".greetingWord_cl");
 
+
 function getTime() {
     const date = new Date();
     const houre = date.getHours();
@@ -24,14 +25,11 @@ function getRandomNumber(){
     return number;
 }
 
-function writeGreeting(number){
+function writeGreeting(){
     const wordText = [`Happy New Year`,`Have a good time`,`Welcom My Browser`];
-    greetingWord.innerText = `${wordText[number]}`;
-}
-
-function getRandomText(){
-    const text = Math.floor(Math.random()*3);
-    return text;
+    for(i in wordText){
+    greetingWord.innerText = `${wordText[i]}`;
+    }
 }
 
 function init(){
@@ -41,9 +39,9 @@ function init(){
     //background
     const randomBg = getRandomNumber();
     paintBackground(randomBg);
-    //Greeting
-    const randomWord = getRandomText();
-    writeGreeting(randomWord);
+    //Greetin
+    writeGreeting();
+    setInterval(writeGreeting, 5000);
 }
 
 init();
