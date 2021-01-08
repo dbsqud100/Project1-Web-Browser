@@ -39,5 +39,5 @@ body {
 }
 
 #greetingWord_id {
-  animation: fadeIn 2s linear;
+  animation: fadeIn 0.5s linear;
 }
