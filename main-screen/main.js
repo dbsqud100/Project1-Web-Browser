@@ -25,10 +25,14 @@ function getRandomNumber(){
     return number;
 }
 
+const wordText = [`Happy New Year`,`Have a good time`,`Welcom My Browser`];
 function writeGreeting(){
-    const wordText = [`Happy New Year`,`Have a good time`,`Welcom My Browser`];
-    for(i in wordText){
-    greetingWord.innerText = `${wordText[i]}`;
+    for(let i=0; i<3; i++){
+        (function(ii){
+            setTimeout(function(){
+                greetingWord.innerText = `${wordText[i]}`; 
+            }, 5000*ii);
+        })(i);
     }
 }
 
@@ -41,7 +45,7 @@ function init(){
     paintBackground(randomBg);
     //Greetin
     writeGreeting();
-    setInterval(writeGreeting, 5000);
+    setInterval(writeGreeting, 15000);
 }
 
 init();
