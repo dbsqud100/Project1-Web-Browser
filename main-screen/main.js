@@ -27,7 +27,8 @@ function getRandomNumber(){
 
 const wordText = [`Happy New Year`,`Have a good time`,`Welcom My Browser`];
 function writeGreeting(){
-    for(let i=0; i<3; i++){
+    for(let i in wordText){
+        //클로저:내부함수가 외부함수에 접근할 수 있게 하는 것 
         (function(ii){
             setTimeout(function(){
                 greetingWord.innerText = `${wordText[i]}`; 
