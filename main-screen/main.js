@@ -32,7 +32,7 @@ function writeGreeting(){
         (function(ii){
             setTimeout(function(){
                 greetingWord.innerText = `${wordText[i]}`; 
-            }, 5000*ii);
+            }, 5000*ii); 
         })(i);
     }
 }
@@ -46,7 +46,7 @@ function init(){
     paintBackground(randomBg);
     //Greetin
     writeGreeting();
-    setInterval(writeGreeting, 15000);
+    setInterval(writeGreeting, 5000*wordText.length);
 }
 
 init();
