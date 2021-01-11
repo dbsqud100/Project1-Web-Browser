@@ -31,7 +31,7 @@ function writeGreeting(){
         //클로저:내부함수가 외부함수에 접근할 수 있게 하는 것 
         (function(ii){
             setTimeout(function(){
-                greetingWord.innerText = `${wordText[i]}`; 
+                greetingWord.innerText = `${wordText[i]}`;
             }, 5000*ii); 
         })(i);
     }
