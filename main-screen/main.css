@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 180px;
 }
 
 @keyframes fadeIn {
@@ -26,7 +26,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  animation: fadeIn 1s linear;
 }
 
 #greeting_id {
@@ -36,8 +35,12 @@ body {
   margin-top: 10px;
   font-size: 45px;
   color: white;
+  animation: fadeIn 0.5s linear;
 }
 
-#greetingWord_id {
-  animation: fadeIn 0.5s linear;
+#manu_id {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  color: white;
 }
