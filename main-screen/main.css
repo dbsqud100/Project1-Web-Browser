@@ -1,6 +1,13 @@
 body {
   background-color: gray;
 }
+
+#main_screen_div {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  flex-direction: row;
+}
+
 #clock_div_id {
   font-size: 30px;
   color: white;
@@ -38,9 +45,59 @@ body {
   animation: fadeIn 0.5s linear;
 }
 
+#manu_container_id {
+  width: 400px;
+  height: 600px;
+  /*
+    overflow
+
+  */
+  overflow: hidden;
+}
+
 #manu_id {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 25px;
-  color: white;
+  width: 150px;
+  height: 100%;
+  background-color: #4d4d4d;
+  padding-top: 100px;
+  /*
+    transition
+    - transition은 원하는 요소를 지연시켜 애니메이션이 가능하게 만들어준다
+    예를 들어 마우스 오버시 회전하거나 점점 사라지게 하는 효과를 들수 있다.
+  */
+  transition: transfrom 600ms;
+  /*
+    transform
+    - css의 2D 및 3D 변형 효과를 표현할 수 있는 매소드이다. 
+  */
+  transform: translate(-150px, 0px);
+
+  -ms-transition: -ms-transition 600ms;
+  -webkit-transition: -webkit-transition 600ms;
+  -moz-transition: -moz-transition 600ms;
+  -o-transition: -o-transition 600ms;
+
+  -ms-transform: translate(-150px, 0px);
+  -webkit-transform: translate(-150px, 0px);
+  -moz-transform: translate(-150px, 0px);
+  -o-transform: translate(-150px, 0px);
+}
+
+#manu_id > div {
+  width: 150px;
+  height: 30px;
+  /*
+    line-height
+    - line-box의 높이를 설정하는 css속성이다 일반적으로 텍스트 줄 사이의
+    거리를 설정하는데 사용한다.
+  */
+  line-height: 30px;
+  /*
+    vertical-align
+    - 텍스트의 수직 정렬를 지정한다. 
+  */
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5px;
 }
