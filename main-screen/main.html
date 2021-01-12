@@ -6,22 +6,25 @@
         <title>Welcom My Browser</title>
     </head>
     <body>
-        <div class="manu_container_cl" id="manu_container_id">
-            <div class="manu_cl" id="manu_id">
-                <div>Profile</div>
-                <div>Notice board</div>
+        <div id="main_screen_div">
+            <div>
+                <div class="clock_div_cl" id="clock_div_id">
+                    <h1 class="clock_h1_cl">00:00</h1>
+                </div>
+                <div class="greeting_cl" id="greeting_id">
+                    <span class="greetingWord_cl" id="greetingWord_id"></span>
+                </div>
             </div>
-            <div class="manu_open_btn_cl" id="manu_open_btn_id" onclick="open_menu();">
-                <i class="fas fa-bars"></i>
+            <div class="manu_container_cl" id="manu_container_id">
+                <div class="manu_cl" id="manu_id">
+                    <div>Profile</div>
+                    <div>Notice board</div>
+                </div>
+                <div class="manu_open_btn_cl" id="manu_open_btn_id" onclick="open_menu();">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
-        <div class="clock_div_cl" id="clock_div_id">
-            <h1 class="clock_h1_cl">00:00</h1>
-        </div>
-        <div class="greeting_cl" id="greeting_id">
-            <span class="greetingWord_cl" id="greetingWord_id"></span>
-        </div>
-        
         <script src="main.js"></script>
         <!--font Awesome 사용하기 위해 필요한 kit-->
         <script 
