@@ -1,11 +1,13 @@
+html,
 body {
-  background-color: gray;
+  height: 100%;
 }
 
-#main_screen_div {
+body {
+  background-color: gray;
   display: flex;
-  margin: 0px 0px 0px 0px;
   flex-direction: row;
+  margin: 0px 0px 0px 0px;
 }
 
 #clock_div_id {
@@ -45,59 +47,53 @@ body {
   animation: fadeIn 0.5s linear;
 }
 
-#manu_container_id {
-  width: 400px;
-  height: 600px;
-  /*
-    overflow
+#main_screen {
+  width: 100%;
+  height: 97%;
+  display: flex;
+}
 
-  */
+#function_screen {
+  width: 90%;
+  height: 100%;
+}
+
+#manu_container_id {
+  width: 10%;
+  height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 #manu_id {
-  width: 150px;
-  height: 100%;
+  width: 100%;
+  height: 50%;
+  padding-top: 10%;
   background-color: #4d4d4d;
-  padding-top: 100px;
-  /*
-    transition
-    - transition은 원하는 요소를 지연시켜 애니메이션이 가능하게 만들어준다
-    예를 들어 마우스 오버시 회전하거나 점점 사라지게 하는 효과를 들수 있다.
-  */
-  transition: transfrom 600ms;
-  /*
-    transform
-    - css의 2D 및 3D 변형 효과를 표현할 수 있는 매소드이다. 
-  */
-  transform: translate(-150px, 0px);
-
-  -ms-transition: -ms-transition 600ms;
-  -webkit-transition: -webkit-transition 600ms;
-  -moz-transition: -moz-transition 600ms;
-  -o-transition: -o-transition 600ms;
-
-  -ms-transform: translate(-150px, 0px);
-  -webkit-transform: translate(-150px, 0px);
-  -moz-transform: translate(-150px, 0px);
-  -o-transform: translate(-150px, 0px);
+  /* transform: translate(-100%, 100%);
+  transition: transform 600ms; */
 }
 
 #manu_id > div {
-  width: 150px;
+  width: 100%;
   height: 30px;
-  /*
-    line-height
-    - line-box의 높이를 설정하는 css속성이다 일반적으로 텍스트 줄 사이의
-    거리를 설정하는데 사용한다.
-  */
-  line-height: 30px;
-  /*
-    vertical-align
-    - 텍스트의 수직 정렬를 지정한다. 
-  */
-  vertical-align: middle;
   text-align: center;
+  margin-bottom: 10px;
   color: #ffffff;
-  margin-bottom: 5px;
+  box-shadow: 0px 1px 0px #ffffff;
+}
+
+#manu_id > div:hover {
+  background-color: #808080;
+}
+
+#manu_open_btn_id {
+  position: absolute;
+  color: #ffffff;
+  font-size: 30px;
+  transition: font-size 0.1s ease-in;
+}
+
+#manu_open_btn_id:hover {
+  font-size: 33px;
 }
