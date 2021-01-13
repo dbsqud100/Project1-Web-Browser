@@ -6,23 +6,22 @@
         <title>Welcom My Browser</title>
     </head>
     <body>
-        <div id="main_screen_div">
-            <div>
-                <div class="clock_div_cl" id="clock_div_id">
-                    <h1 class="clock_h1_cl">00:00</h1>
-                </div>
-                <div class="greeting_cl" id="greeting_id">
-                    <span class="greetingWord_cl" id="greetingWord_id"></span>
-                </div>
+        <div class="manu_container_cl" id="manu_container_id">
+            <div class="manu_open_btn_cl" id="manu_open_btn_id" onclick="open_menu();">
+                <i class="fas fa-bars"></i>
             </div>
-            <div class="manu_container_cl" id="manu_container_id">
-                <div class="manu_cl" id="manu_id">
-                    <div>Profile</div>
-                    <div>Notice board</div>
-                </div>
-                <div class="manu_open_btn_cl" id="manu_open_btn_id" onclick="open_menu();">
-                    <i class="fas fa-bars"></i>
-                </div>
+            <div class="manu_cl" id="manu_id">
+                <div>Profile</div>
+                <div>Board</div>
+                <div>Close</div>
+            </div>
+        </div>
+        <div id="function_screen">
+            <div class="clock_div_cl" id="clock_div_id">
+                <h1 class="clock_h1_cl">00:00</h1>
+            </div>
+            <div class="greeting_cl" id="greeting_id">
+                <span class="greetingWord_cl" id="greetingWord_id"></span>
             </div>
         </div>
         <script src="main.js"></script>
