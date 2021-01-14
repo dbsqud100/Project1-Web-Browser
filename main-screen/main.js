@@ -3,7 +3,8 @@ const clockTitle = clockContainer.querySelector(".clock_h1_cl");
 const body = document.querySelector("body");
 const greeting = document.querySelector(".greeting_cl");
 const greetingWord = greeting.querySelector(".greetingWord_cl");
-
+const menuOpen = document.getElementById("manu_open_btn_id");
+const hideMenu = document.getElementById("manu_id");
 
 function getTime() {
     const date = new Date();
@@ -35,6 +36,16 @@ function writeGreeting(){
             }, 5000*ii); 
         })(i);
     }
+}
+
+function open_menu(){
+    menuOpen.style[`display`] = "none";
+    hideMenu.style[`transform`] = "translate(9%, 0%)";
+}
+
+function closeMenu(){
+    menuOpen.style[`display`] = "block";
+    hideMenu.removeAttribute("style");
 }
 
 function init(){
