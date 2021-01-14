@@ -7,13 +7,13 @@
     </head>
     <body>
         <div class="manu_container_cl" id="manu_container_id">
-            <div class="manu_open_btn_cl" id="manu_open_btn_id" onclick="open_menu();">
+            <div class="manu_open_btn_cl" id="manu_open_btn_id" onclick="open_menu(this); return false;">
                 <i class="fas fa-bars"></i>
             </div>
             <div class="manu_cl" id="manu_id">
                 <div>Profile</div>
                 <div>Board</div>
-                <div>Close</div>
+                <div onclick="closeMenu(); return false;">Close</div>
             </div>
         </div>
         <div id="function_screen">
