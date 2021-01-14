@@ -40,7 +40,7 @@ function writeGreeting(){
 
 function open_menu(){
     menuOpen.style[`display`] = "none";
-    hideMenu.style[`transform`] = "translate(9%, 0%)";
+    hideMenu.style[`transform`] = "translate(0px, 0px)";
 }
 
 function closeMenu(){
