@@ -64,7 +64,7 @@ body {
   height: 50%;
   padding-top: 10%;
   background-color: #4d4d4d;
-  transform: translate(-100%, 0px);
+  transform: translate(-110%, 0px);
   transition: transform 600ms;
 }
 
