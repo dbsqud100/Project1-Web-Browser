@@ -34,6 +34,7 @@ function writeGreeting(){
             setTimeout(function(){
                 greetingWord.innerText = `${wordText[i]}`;
             }, 5000*ii); 
+            greetingWord.classList.add("greetingword");
         })(i);
     }
 }
