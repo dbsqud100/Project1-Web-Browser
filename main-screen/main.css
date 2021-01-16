@@ -94,3 +94,38 @@ body {
 #manu_open_btn_id:hover {
   font-size: 33px;
 }
+
+#name_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+#name_container > div {
+  width: 25%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#what_name {
+  width: 85%;
+  border: none;
+  border-radius: 10px;
+  padding-left: 5%;
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+#name_btn {
+  padding-right: 4%;
+  opacity: 0.5;
+}
+
+input:focus {
+  outline: none;
+}
