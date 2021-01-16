@@ -14,7 +14,8 @@ body {
   font-size: 30px;
   color: white;
   display: flex;
-  padding-left: 34%;
+  justify-content: center;
+  align-items: center;
   margin-top: 180px;
 }
 
@@ -40,7 +41,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 14%;
   font-size: 45px;
   color: white;
   animation: fadeIn 0.5s linear;
@@ -55,7 +55,8 @@ body {
   width: 10%;
   height: 100%;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  z-index: 2;
 }
 
 #manu_id {
