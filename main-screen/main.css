@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 180px;
+  height: 70px;
 }
 
 @keyframes fadeIn {
@@ -99,7 +100,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 #name_container > div {
@@ -112,7 +113,7 @@ body {
   border-radius: 10px;
 }
 
-#what_name {
+#what_name_id {
   width: 85%;
   border: none;
   border-radius: 10px;
