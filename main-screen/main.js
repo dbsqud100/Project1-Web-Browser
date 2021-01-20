@@ -5,9 +5,6 @@ const greeting = document.querySelector(".greeting_cl");
 const greetingWord = greeting.querySelector(".greetingWord_cl");
 const menuOpen = document.getElementById("manu_open_btn_id");
 const hideMenu = document.getElementById("manu_id");
-const nameForm = document.querySelector(".name_div_cl");
-const nameInput = nameForm.querySelector(".what_name_cl");
-const USER_LS = "userName";
 
 function getTime() {
     const date = new Date();
@@ -50,10 +47,6 @@ function open_menu(){
 function closeMenu(){
     menuOpen.style[`display`] = "block";
     hideMenu.removeAttribute("style");
-}
-
-function loadName(){
-    const userName = localStorage.getItem(USER_LS);
 }
 
 function init(){
