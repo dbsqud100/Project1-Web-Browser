@@ -103,7 +103,7 @@ body {
   margin-top: 40px;
 }
 
-#name_container > div {
+#name_container > form {
   width: 250px;
   height: 28px;
   display: flex;
@@ -129,4 +129,8 @@ body {
 
 input:focus {
   outline: none;
+}
+
+#name_id {
+  display: block;
 }
