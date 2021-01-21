@@ -5,8 +5,6 @@ const greeting = document.querySelector(".greeting_cl");
 const greetingWord = greeting.querySelector(".greetingWord_cl");
 const menuOpen = document.getElementById("manu_open_btn_id");
 const hideMenu = document.getElementById("manu_id");
-const nameInput = document.querySelector(".what_name_cl");
-const namePaint = document.querySelector(".name_cl");
 
 function getTime() {
     const date = new Date();
@@ -52,7 +50,12 @@ function closeMenu(){
 }
 
 function loadName(){
-    const userName = nameInput.nodeValue;
+    const name = document.getElementById(`what_name_id`).value;
+    if(name === ``){
+        document.getElementById(`user_name`).innerText = ``
+    }else{
+        document.getElementById(`user_name`).innerText = `Hello ${name}! Welcom My Browser`;
+    }
 }
 
 function init(){
