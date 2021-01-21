@@ -100,10 +100,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 40px;
 }
 
-#name_container > form {
+#name_input_container {
   width: 250px;
   height: 28px;
   display: flex;
@@ -133,4 +135,18 @@ input:focus {
 
 #name_id {
   display: block;
+}
+
+#name_print {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+#user_name {
+  animation: fadeIn 1s linear;
 }
