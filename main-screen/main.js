@@ -18,7 +18,7 @@ function paintBackground(number){
     const image = new Image();
     image.src = `image/${number+1}.jpg`;
     image.classList.add("bgImage");
-    body.prepend(image)
+    body.prepend(image);
 }
 
 function getRandomNumber(){
