@@ -39,3 +39,18 @@ body {
   font-weight: bold;
   color: white;
 }
+
+.board_manu_container_cl {
+  width: 30%;
+  height: 80%;
+  background-color: black;
+}
+
+.board_content_container_cl {
+  width: 50%;
+  height: 50%;
+  background-color: tomato;
+  position: absolute;
+  bottom: 50%;
+  right: 50px;
+}
