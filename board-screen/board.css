@@ -23,6 +23,8 @@ body {
   width: 80%;
   height: 90%;
   background-color: rgba(153, 153, 153, 0.8);
+  display: block;
+  flex-direction: column;
 }
 
 .board_title_container_cl {
@@ -40,17 +42,8 @@ body {
   color: white;
 }
 
-.board_manu_container_cl {
-  width: 30%;
-  height: 80%;
-  background-color: black;
-}
-
 .board_content_container_cl {
-  width: 50%;
-  height: 50%;
-  background-color: tomato;
-  position: absolute;
-  bottom: 50%;
-  right: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
