@@ -73,3 +73,20 @@ body {
   font-size: 20px;
   color: white;
 }
+
+.content_borad {
+  width: 70%;
+  background-color: teal;
+  margin-top: 25px;
+}
+
+.content_borad_title {
+  width: 88%;
+  margin-left: 2%;
+  height: 7%;
+  padding-left: 10%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  color: white;
+}
