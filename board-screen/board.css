@@ -51,18 +51,22 @@ body {
 }
 
 .content_menu {
-  width: 30%;
+  width: 20%;
   margin-top: 25px;
   display: block;
   justify-content: center;
   align-items: center;
-  background-color: tomato;
+  border-right: 1px solid white;
 }
 
-.menu_1 {
+.menu_content_container {
+  padding: 10px;
+  width: 65%;
+  margin-left: 12.5%;
+  border-bottom: 1px solid white;
 }
 
-.menu_1_content {
+.menu_content {
   display: flex;
   justify-content: center;
   align-items: center;
