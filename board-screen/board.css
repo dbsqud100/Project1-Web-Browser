@@ -45,7 +45,7 @@ body {
 
 .board_content_container_cl {
   width: 100%;
-  height: 78%;
+  height: 75%;
   display: flex;
   flex-direction: row;
 }
@@ -83,10 +83,27 @@ body {
 .content_borad_title {
   width: 88%;
   margin-left: 2%;
-  height: 7%;
+  height: 30px;
   padding-left: 10%;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   font-size: 20px;
+  color: white;
+}
+
+.board_btn_container_cl {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.write_btn {
+  background-color: gray;
+  border: none;
+  position: relative;
+  left: -75px;
+  width: 60px;
+  height: 20px;
+  font-size: 15px;
   color: white;
 }
