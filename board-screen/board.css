@@ -102,8 +102,12 @@ body {
   border: none;
   position: relative;
   left: -75px;
-  width: 60px;
-  height: 20px;
+  width: 80px;
+  height: 30px;
   font-size: 15px;
   color: white;
+}
+
+.board_btn_container_cl button :hover {
+  background-color: tomato;
 }
