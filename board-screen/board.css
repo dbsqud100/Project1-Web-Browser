@@ -107,7 +107,3 @@ body {
   font-size: 15px;
   color: white;
 }
-
-.board_btn_container_cl button :hover {
-  background-color: tomato;
-}
