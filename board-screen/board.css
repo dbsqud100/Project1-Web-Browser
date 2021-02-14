@@ -107,3 +107,8 @@ body {
   font-size: 15px;
   color: white;
 }
+
+.content_borad_input_cl {
+  width: 100%;
+  height: 15px;
+}
