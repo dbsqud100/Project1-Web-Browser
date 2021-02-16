@@ -108,6 +108,9 @@ body {
   color: white;
 }
 .content_borad_input_div_cl {
+  display: flex;
+  padding-left: 152px;
+  padding-right: 74px;
 }
 .content_borad_input_cl {
   width: 100%;
