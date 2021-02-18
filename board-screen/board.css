@@ -76,7 +76,6 @@ body {
 
 .content_borad {
   width: 70%;
-  background-color: teal;
   margin-top: 25px;
 }
 
@@ -117,4 +116,7 @@ body {
 .content_borad_input_cl {
   width: 100%;
   height: 15px;
+}
+
+.content_borad_ul_id {
 }
