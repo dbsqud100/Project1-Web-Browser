@@ -119,4 +119,5 @@ body {
 }
 
 .content_borad_ul_id {
+  display: flex;
 }
