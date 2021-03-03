@@ -5,6 +5,11 @@ body {
   margin: 0px 0px 0px 0px;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .bgImage {
   position: absolute;
   width: 100%;
@@ -15,8 +20,7 @@ body {
 }
 
 #profile_main {
-  margin-top: 200px;
-  width: 300px;
+  width: 500px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -24,24 +28,36 @@ body {
 
 #profile_title {
   width: 100%;
-  height: 50%;
+  height: 20%;
   background-color: blue;
 }
 
 #profile_content {
   width: 100%;
-  height: 50%;
+  height: 80%;
   background-color: brown;
 }
 
 #protile_menu {
-  margin-top: 200px;
-  width: 200px;
+  width: 150px;
   height: 500px;
-  background-color: cadetblue;
+  background-color: gray;
+  opacity: 0.5;
   display: flex;
   flex-direction: column;
 }
 
 #go_to_main {
+  margin-top: 15px;
+  width: 100%;
+  height: 10%;
+  background-color: coral;
+  border: none;
+}
+
+#go_to_board {
+  width: 100%;
+  height: 10%;
+  background-color: beige;
+  border: none;
 }
