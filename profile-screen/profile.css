@@ -29,13 +29,11 @@ body {
 #profile_title {
   width: 100%;
   height: 20%;
-  background-color: blue;
 }
 
 #profile_content {
   width: 100%;
   height: 80%;
-  background-color: brown;
 }
 
 #protile_menu {
@@ -44,19 +42,33 @@ body {
   background-color: gray;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+#protile_menu > div:hover {
+  background-color: #808080;
+  opacity: 0.8;
 }
 
 #go_to_main {
   margin-top: 15px;
-  width: 100%;
+  width: 80%;
   height: 10%;
-  background-color: coral;*
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-bottom: solid 1px white;
 }
 
 #go_to_board {
-  width: 100%;
+  width: 80%;
   height: 10%;
-  background-color: beige;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-bottom: solid 1px white;
 }
