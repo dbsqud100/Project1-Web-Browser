@@ -29,11 +29,13 @@ body {
 #profile_title {
   width: 100%;
   height: 20%;
+  background-color: gray;
 }
 
 #profile_content {
   width: 100%;
   height: 80%;
+  background-color: gray;
 }
 
 #protile_menu {
@@ -43,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-right: solid 1px white;
 }
 
 #protile_menu > div:hover {
